@@ -1,0 +1,59 @@
+*
+{
+    box-sizing: border-box;
+}
+
+/* 1. Default Light Mode & Global Settings */
+:root {
+  /* Necessary flag for modern browser features */
+  color-scheme: light dark; 
+
+  /* Light Theme Color Tokens */
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --border-color: #1a1a1a;
+  --placeholder-color: #777777;
+  --accent-color: #2563eb;
+  --card-bg: #f4f4f5;
+  --text-size: 0.875rem;
+}
+
+/* 2. Automatic System Preference Override */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #f5f5f5;
+    --border-color: #f5f5f5;
+    --placeholder-color: #eee4e4;
+    --accent-color: #3b82f6;
+    --card-bg: #1e1e20;
+  }
+}
+
+/* 3. Manual JavaScript Toggle Override */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --border-color: #f5f5f5;
+  --placeholder-color: #eee4e4;
+  --accent-color: #3b82f6;
+  --card-bg: #1e1e20;
+}
+
+.samplemain
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    overflow: hidden;
+}
+
+.samplemain div.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}

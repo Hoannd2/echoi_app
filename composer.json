@@ -1,0 +1,21 @@
+{
+    "name": "hoannd2/echoi-app",
+    "description": "Skeleton application for the Echoi (XY) platform",
+    "type": "project",
+    "license": "MIT",
+    "keywords": ["echoi", "xy", "skeleton"],
+    "authors": [
+        {
+            "name": "ducanhtranptit",
+            "email": "tda.ducanh@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
